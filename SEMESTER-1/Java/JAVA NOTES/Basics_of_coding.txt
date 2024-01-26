@@ -1,0 +1,57 @@
+Tokens:- These are the smallest elements in Java Program which are identified by compiler.
+
+Types of Tokens:- 
+    1. Keywords:- These are the reserved words used for special purpose.
+                  Example:- if,else, switch, String
+
+    2. Idenfiers:- These are the name givenn to any data item in an program,
+                   In JAVA name given by programmer to class, variables, methods.
+                   JAVA is case sensitive language.
+
+    3. Literals:- A contanst value in JAVA is created by literal represented of it.
+
+    4. Comments:- These are the statements written by programmers to describe some parts of code in ts program,
+                  compiler will ignore these lines of comments while compiling code.
+
+                  Types of comments:-
+                            i) Single line comments:- //<statements>
+                            ii) Multi line comments:- /*
+                                                         <statements>
+                                                      */
+                            iii) Document comments:- /**
+                                                       <statements>
+                                                      */
+
+    5.  Seprators:- () Parentheses
+                    [] Brakets
+                    {} Braces
+                     ; Semicolon
+                     : Colon
+                     , Comma
+                     . Period
+                    :: Colons
+
+    6.  Operators:- + - * / % (Arithmatic Operators)
+                    += -= *= /= %= (Arithmatic Compund Operators)
+                    < > <= >= == != (Relational Operators)
+                    || && ! (Logical Operators)
+
+                    ?: (Short Hand if...else) (Ternary Operator)
+
+                    Bitwise Operators:-
+                                ~ (Bitwise Unary NOT)
+                                & (Bitwise AND)
+                                | (Bitwise OR)
+                                ^ (Bitwise EXCULSIVE OR)
+
+                              | A | B | A&B | A|B | A^B | ~A |
+                              | 0 | 0 |  0  |  0  |  0  |  1 |
+                              | 0 | 1 |  0  |  1  |  1  |  1 |
+                              | 1 | 0 |  0  |  1  |  1  |  0 |
+                              | 1 | 1 |  1  |  1  |  0  |  0 |
+
+                    >>  (Shift Right)
+                    >>> (Shift Right Zero Fill)
+                    <<  (Shift Left)
+    
+

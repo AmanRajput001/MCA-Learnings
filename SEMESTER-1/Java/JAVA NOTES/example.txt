@@ -1,0 +1,102 @@
+public class Nested_class {
+    int val = 10;
+    static int num=100;
+    /**
+     * Static class:- static class is a class which cannot directly access the all
+     *                instace variables of class (Non-static) in which it declared.
+     */
+    static class DemoTest{
+        public static void display(){
+            //System.out.println(val + "In static class inside class");
+            //non-static variable val cannot be referenced from a static context
+            System.out.println(num + " In static class inside class\n");
+        }
+    }
+
+    /**
+     * Inner Class:- An inner class is a non-static nested class. It has access to all members (fields and methods) 
+     *               of the outer class, even if they are marked as private.
+     */
+    class InnerClass{
+        public void display(){
+            System.out.println(val + " In class inside class");
+            //non-static variable val cannot be referenced from a static context
+            System.out.println(num + " In class inside class\n");
+        }
+    }
+
+    public void localFunction(){
+        int temp = 999;
+            class InnerLocalClass{
+                public void display(){
+                System.out.println(val + " In class inside class");
+                //non-static variable val cannot be referenced from a static context
+                System.out.println(num + " In class inside class");            
+                System.out.println(temp + " In class inside class\n");
+            }
+        }
+        InnerLocalClass il = new InnerLocalClass();
+        il.display();
+    }
+
+    public static void main(String args[]){
+        DemoTest.display();
+
+        Nested_class n = new Nested_class();
+        Nested_class.InnerClass i = n.new InnerClass();
+        i.display();
+
+        n.localFunction();
+    }
+}
+public class Nested_class {
+    int val = 10;
+    static int num=100;
+    /**
+     * Static class:- static class is a class which cannot directly access the all
+     *                instace variables of class (Non-static) in which it declared.
+     */
+    static class DemoTest{
+        public static void display(){
+            //System.out.println(val + "In static class inside class");
+            //non-static variable val cannot be referenced from a static context
+            System.out.println(num + " In static class inside class\n");
+        }
+    }
+
+    /**
+     * Inner Class:- An inner class is a non-static nested class. It has access to all members (fields and methods) 
+     *               of the outer class, even if they are marked as private.
+     */
+    class InnerClass{
+        public void display(){
+            System.out.println(val + " In class inside class");
+            //non-static variable val cannot be referenced from a static context
+            System.out.println(num + " In class inside class\n");
+        }
+    }
+
+    public void localFunction(){
+        int temp = 999;
+            class InnerLocalClass{
+                public void display(){
+                System.out.println(val + " In class inside class");
+                //non-static variable val cannot be referenced from a static context
+                System.out.println(num + " In class inside class");            
+                System.out.println(temp + " In class inside class\n");
+            }
+        }
+        InnerLocalClass il = new InnerLocalClass();
+        il.display();
+    }
+
+    public static void main(String args[]){
+        DemoTest.display();
+
+        Nested_class n = new Nested_class();
+        Nested_class.InnerClass i = n.new InnerClass();
+        i.display();
+
+        n.localFunction();
+    }
+}

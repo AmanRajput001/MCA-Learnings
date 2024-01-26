@@ -1,0 +1,128 @@
+JAVA is developed by James Gosling at SunMicrosystem in year 1991.
+Today its owned by Oracle.
+
+To run java we need :- JVM (Java Virtual Machine) and JRE (Java Runtime Environment)
+                       Both are integergeted in JDK (Java Development Tool kit).
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+JAVA Code ----COMPLIED--> Byte Code ((.class file) which is Platform Independent) ----INTERPRETED----> Output
+
+platform = operating system + hardware, Examples of platform:- Windows, Linux
+
+Java is both compiled and interpreted. Java source code is compiled into bytecode by the Java compiler. 
+This bytecode is platform-independent and can be interpreted by the JVM at runtime. 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Note that:- JAVA is Platform independent [JAVA code "Write Once, Run Anywhere (WORA)"],
+            but we require JVM to Run it which is platform dependent.
+            
+            The JVM is platform-dependent because different versions of JVM are designed for 
+            specific operating systems.Java applications written in bytecode can be executed without modification.
+            This means that a Java program compiled on one operating system (e.g., Windows) can be run on another operating system
+            (e.g., Linux or macOS) as long as there is a compatible JVM available for each platform.
+
+Uses of Java:- 1. Desktop applications
+               2. Web applications
+               3. Enterpise Applictaions example:- Banking Application
+               4. Embedded system
+               5. Smart Card, Robiotics, Games and many more.
+
+Features of JAVA :- 1. Architecture-netural
+                    2. Robust
+                    3. Dyanmic
+                    4. Distributed
+                    5. Interpreted
+
+1. Architecture-Neutral: 
+   i)  Java's bytecode can run on any platform with a compatible Java Virtual Machine (JVM), 
+       ensuring platform independence.
+   ii) Like in C or C++ :- int a = 10; will take 2 byte in 32-bit Architecture
+                                       will take 4 byte in 64-bit Architecture
+       In java int will always take 4 byte irrespective of Architecture.
+
+2. Robust: 
+   Java emphasizes reliability and stability through strong type checking, exception handling, 
+   and automatic memory management, reducing errors and crashes.
+
+3. Dynamic: 
+   Java supports dynamic memory allocation, dynamic loading of classes, and dynamic method invocation, 
+   enhancing flexibility and adaptability in programming.
+
+4. Distributed: 
+   Java provides extensive support for developing distributed computing applications, enabling communication 
+   and data sharing over networks.
+
+5. Interpreted and Compiled: 
+   Java code is compiled into bytecode, which is then interpreted by the JVM. 
+   Modern implementations use a mix of interpretation and Just-In-Time (JIT) compilation for 
+   improved performance.
+
+6. Object-Oriented: 
+   Java follows the principles of encapsulation, inheritance, and polymorphism, organizing code into 
+   objects for effective design and development.
+
+7. Secure: 
+   Java incorporates security features and a Security Manager to prevent unauthorized access and 
+   protect systems and data from malicious activities.
+
+8. Multithreaded: 
+   Java supports multithreading, allowing multiple threads to run concurrently, enhancing responsiveness and 
+   enabling the development of interactive applications.
+
+Some more important feature of java:- 9. Simple [Easy to learn, Simple Syntax], 
+                                      10. No need to remove Unreference objects (it has Garbage Collector for that purpose),
+                                      11. Approx Fully Object Oriented Programming Language  
+                                      12. No need to include Explicit Pointers, Operator Overloading
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Remember this:-
+In JAVA their is "Classloader" which loads java classes into JVM Dyanmically (at runtime) whereever needed,
+means Java classes are not loaded in memeory all at once, but when required by application. At this Point
+Java Classloader is called by JRE and this classloader loads the classes (as needed) into memory dynamically.
+Unlike In c or c++ "#" pre proccessor directive include the header file which we are using in code at compile 
+timeonly.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Types of classloader:- 
+                        1. Bootstrap class loader
+                            i)   The Bootstrap Class Loader is the parent of all other ClassLoaders in Java.
+                            ii)  It loads core Java classes from the bootstrap classpath, which includes the 
+                                 system classes from the <JAVA_HOME>/lib directory.
+                            iii) Bootstrap Class Loader is implemented in native languages (like C/C++) and 
+                                 is not written in Java.
+                         => iv)  It is responsible for loading fundamental classes that are a part of 
+                                 Java runtime environment, including classes from java.lang package.
+                        
+                        2. Extension Classloader
+                            i)   The Extension ClassLoader (also known as Platform ClassLoader) is the child of the Bootstrap Class Loader.
+                            ii)  It loads classes from the extensions directories 
+                                 (<JAVA_HOME>/lib/ext or any other directory specified by the java.ext.dirs system property).
+                         => iii) Extension ClassLoader is used for loading the classes that are a part of 
+                                 Java Standard Extension APIs.
+                        
+                        3. System Classloader
+                            i) The System ClassLoader is the child of the Extension ClassLoader.
+                            ii) It loads classes from the classpath specified by the java.class.path system property.
+                         => iii) System ClassLoader is responsible for loading application-specific classes. 
+                                 When you run a Java application, classes are loaded by the System ClassLoader.
+
+POP vs OOPS
+
+POP:- 1. In it Program is divided in small parts called functions.
+      2. No Virtual functions
+      3. Procedure Oriented Programming Follws: "Top Down Approach"
+                                                (Divide bigger problems in smaller problems and repeat same).
+      4. Inheritance is not supported.
+      5. No Acces Modifiers.
+      6. No data hiding
+
+Whereas
+
+OOPS:- 1. In it Program is divided into small parts called objects.
+       2. Have Virtual Functions.=
+       3. Object Oriented Programming Follws: "Bottom Up Approach"
+                                               (Main focus to solve small problems then merge them to solve 
+                                                particular problem).
+       4. Inheritance is supported.
+       5. Have Acces Modifiers.
+       6. Have data hiding, encapsulation.
