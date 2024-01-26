@@ -1,6 +1,6 @@
 # MCA Learnings Repository
 
-Welcome to the MCA Practical Programs Repository! This collection reflects my academic journey during my Master of Computer Applications (MCA) courses. Here's what you'll discover:
+Welcome to the MCA Learnings Repository! This collection reflects my academic journey during my Master of Computer Applications (MCA) courses. Here's what you'll discover:
 
 ## Self-Made Notes
 Explore some notes crafted to capture essential concepts from my MCA courses. These notes serve as a valuable resource for understanding key topics.
