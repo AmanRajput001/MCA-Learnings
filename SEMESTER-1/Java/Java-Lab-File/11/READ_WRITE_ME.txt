@@ -1,0 +1,2 @@
+HELLO I am Student of CDAC.
+JAVA is Simple, Platform Independent Language.
